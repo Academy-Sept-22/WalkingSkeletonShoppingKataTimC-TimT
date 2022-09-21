@@ -1,7 +1,7 @@
 public class ShoppingBasketService {
 
-    public void addItem(UserID userId, ProductID productId, int quantity) { }
+	    public void addItem(UserID userId, ProductID productId, int quantity) { }
 
-    public <?> basketFor(UserID userId) { }
+//    public <List> basketFor(UserID userId) { }
 
 }

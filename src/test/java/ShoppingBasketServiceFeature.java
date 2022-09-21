@@ -1,13 +1,15 @@
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 
 public class ShoppingBasketServiceFeature {
 
     @Test
     void
     should_contain_one_film_and_the_total() {
-        User user = new User();
-        String userID = user.id;
+        UserID userID = new UserID();
+        ProductID productID = new ProductID();
         ShoppingBasketService shoppingBasket = new ShoppingBasketService();
         shoppingBasket.addItem(userID, 1002, 1);
 

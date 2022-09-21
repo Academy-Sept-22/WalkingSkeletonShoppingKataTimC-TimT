@@ -16,11 +16,13 @@ public class ShoppingBasketServiceFeature {
     should_contain_one_film_and_the_total() {
 
         addProductsToProductRepository();
-        UserID userID = new UserID();
-        ShoppingBasketService shoppingBasket = new ShoppingBasketService(productRepository);
-        ShoppingBasket shoppingBasket = new ShoppingBasket();
 
-        assertThat(shoppingBasket.basketFor(userID)).isEqualTo("21/09/2022, 1 x The Hobbit, 1 x £5.00 = £5.00, Total: £5.00");
+        User user = new User();
+        ShoppingBasketService shoppingBasket = new ShoppingBasketService(productRepository);
+        productRepository
+        ShoppingBasket shoppingBasket = new ShoppingBasket(productRepository.products);
+
+        assertThat(shoppingBasket.basketFor(user)).isEqualTo("21/09/2022, 1 x The Hobbit, 1 x £5.00 = £5.00, Total: £5.00");
     }
 
     private void addProductsToProductRepository() {

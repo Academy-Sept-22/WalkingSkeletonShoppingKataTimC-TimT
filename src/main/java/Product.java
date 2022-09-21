@@ -1,7 +1,3 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
 public class Product {
 
     private int productId;
@@ -26,5 +22,3 @@ public class Product {
         return productPrice;
     }
 }
-
-// hash {productID, {productName, productPrice}}

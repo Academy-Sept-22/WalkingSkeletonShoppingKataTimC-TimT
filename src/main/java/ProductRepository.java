@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class ProductRepository {
@@ -8,4 +7,14 @@ public class ProductRepository {
     public void addProduct(Product product) {
         products.add(product);
     }
+
+    public Product findProduct(int productId) {
+        for( Product product : products ){
+            if (product.getProductId() == productId) {
+                return product;
+            }
+        }
+        return null;
+    }
+
 }

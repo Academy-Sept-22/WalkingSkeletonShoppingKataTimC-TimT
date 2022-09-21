@@ -27,7 +27,7 @@ Products available (in-memory repository):
 ````
 public class ShoppingBasketService {
 
-        public void addItem(UserID userId, ProductID productId, int quantity) { }
+        public void addItem(UserID userId, Product product, int quantity) { }
 
         public <?> basketFor(UserID userId) { }
     

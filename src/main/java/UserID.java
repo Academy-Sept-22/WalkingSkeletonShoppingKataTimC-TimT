@@ -1,6 +1,6 @@
 public class UserID {
-	private int userId;
 
+	private int userId;
 
 	public UserID() {
 		this.userId = 1;
@@ -9,4 +9,5 @@ public class UserID {
 	public int getUserId() {
 		return userId;
 	}
+
 }

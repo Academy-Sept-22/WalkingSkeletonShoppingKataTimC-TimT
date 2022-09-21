@@ -1,7 +1,12 @@
 public class ShoppingBasketService {
 
-	    public void addItem(UserID userId, ProductID productId, int quantity) { }
+	public void addItem(UserID userId, Product product, int quantity) { }
 
-//    public <List> basketFor(UserID userId) { }
+//    public String[] basketFor(UserID userId) {
+//
+////		String[] userBasket = {"21/09/2022", "1 x The Hobbit", "1 x £5.00 = £5.00", "Total: £5.00"};
+//
+//		return userBasket;
+//	}
 
 }

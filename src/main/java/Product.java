@@ -6,9 +6,9 @@ public class Product {
 
     private int productId;
     private String productName;
-    private float productPrice;
+    private double productPrice;
 
-    public Product(int productId, String productName, float productPrice) {
+    public Product(int productId, String productName, double productPrice) {
         this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
@@ -22,7 +22,7 @@ public class Product {
         return productName;
     }
 
-    public float getProductPrice() {
+    public double getProductPrice() {
         return productPrice;
     }
 }
